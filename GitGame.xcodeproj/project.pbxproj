@@ -19,6 +19,8 @@
 		B40438B621E7CAB10038D9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */; };
 		B40438BE21E7E1510038D9CC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438BD21E7E1510038D9CC /* Quote.swift */; };
 		B40438C021E7E2BC0038D9CC /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438BF21E7E2BC0038D9CC /* QuoteController.swift */; };
+		B40438CB21E7FD880038D9CC /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438CA21E7FD880038D9CC /* QuoteController.swift */; };
+		B40438CD21E7FDAA0038D9CC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438CC21E7FDAA0038D9CC /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B40438B721E7CAB10038D9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40438BD21E7E1510038D9CC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B40438BF21E7E2BC0038D9CC /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		B40438CA21E7FD880038D9CC /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		B40438CC21E7FDAA0038D9CC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				B40438A421E7CAAF0038D9CC /* GitGame */,
 				B40438A321E7CAAF0038D9CC /* Products */,
+				B40438C721E7F9150038D9CC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,21 +98,21 @@
 		B40438A421E7CAAF0038D9CC /* GitGame */ = {
 			isa = PBXGroup;
 			children = (
-
 				26D03A7121E7E9FC002A832A /* Resources */,
 				26D03A7021E7E9B9002A832A /* ViewControllers */,
-
 			);
 			path = GitGame;
 			sourceTree = "<group>";
 		};
-		B40438C121E7E2E30038D9CC /* model */ = {
+		B40438C721E7F9150038D9CC /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				B40438BD21E7E1510038D9CC /* Quote.swift */,
 				B40438BF21E7E2BC0038D9CC /* QuoteController.swift */,
+				B40438CA21E7FD880038D9CC /* QuoteController.swift */,
+				B40438BD21E7E1510038D9CC /* Quote.swift */,
+				B40438CC21E7FDAA0038D9CC /* Quote.swift */,
 			);
-			path = model;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +192,9 @@
 				B40438BE21E7E1510038D9CC /* Quote.swift in Sources */,
 				B40438AC21E7CAAF0038D9CC /* GameScene.swift in Sources */,
 				B40438AE21E7CAAF0038D9CC /* GameViewController.swift in Sources */,
+				B40438CD21E7FDAA0038D9CC /* Quote.swift in Sources */,
 				26D03A6F21E7E8E6002A832A /* QuotesViewController.swift in Sources */,
+				B40438CB21E7FD880038D9CC /* QuoteController.swift in Sources */,
 				B40438A621E7CAAF0038D9CC /* AppDelegate.swift in Sources */,
 				26D03A6D21E7E8D5002A832A /* StartButtonViewController.swift in Sources */,
 			);
