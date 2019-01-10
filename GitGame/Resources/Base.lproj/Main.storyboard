@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Em-Uu-z7l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Button View Controller-->
+        <scene sceneID="f4z-bY-Xiz">
+            <objects>
+                <viewController id="2Em-Uu-z7l" customClass="StartButtonViewController" customModule="GitGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IHb-Ip-dI6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-aP-hSH">
+                                <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AsF-pK-VRO"/>
+                                    <constraint firstAttribute="height" constant="50" id="fey-aY-YDR"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VFC-Om-fTL" kind="presentation" id="3bu-ed-NSd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hGi-aP-hSH" firstAttribute="centerY" secondItem="IHb-Ip-dI6" secondAttribute="centerY" id="85N-gW-h7c"/>
+                            <constraint firstItem="hGi-aP-hSH" firstAttribute="centerX" secondItem="IHb-Ip-dI6" secondAttribute="centerX" id="hRs-Yf-aWA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DGb-45-hub"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtp-f1-GzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="147.97601199400302"/>
+        </scene>
+        <!--Quotes View Controller-->
+        <scene sceneID="LIZ-IO-z52">
+            <objects>
+                <viewController id="VFC-Om-fTL" customClass="QuotesViewController" customModule="GitGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jst-oO-v4K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Ek-W75">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo5-E5-avh">
+                                <rect key="frame" x="8" y="28" width="359" height="100"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9v0-Jh-fpJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2df-jt-6Hu">
+                                <rect key="frame" x="209" y="557" width="150" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LSN-eR-Siy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="iE8-Nd-4ey"/>
+                                </constraints>
+                                <state key="normal" title="Or Not">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="orNotButtonTapped:" destination="VFC-Om-fTL" eventType="touchUpInside" id="ArW-QD-VbO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-bZ-ht2">
+                                <rect key="frame" x="16" y="557" width="139" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ToE-ZL-aB9"/>
+                                </constraints>
+                                <state key="normal" title="Ron Swanson Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ronSwansonButtonTapped:" destination="VFC-Om-fTL" eventType="touchUpInside" id="Gjd-L4-4h3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="FGt-bZ-ht2" secondAttribute="bottom" constant="60" id="29P-fL-54p"/>
+                            <constraint firstItem="wo5-E5-avh" firstAttribute="leading" secondItem="kWc-jO-xXw" secondAttribute="leading" constant="8" id="72g-Rg-Mg0"/>
+                            <constraint firstItem="2df-jt-6Hu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FGt-bZ-ht2" secondAttribute="trailing" constant="8" symbolic="YES" id="94B-AR-GJO"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="2df-jt-6Hu" secondAttribute="trailing" constant="16" id="BLx-Qr-DfC"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="2df-jt-6Hu" secondAttribute="bottom" constant="60" id="DtY-lN-kGV"/>
+                            <constraint firstItem="Whd-Ek-W75" firstAttribute="leading" secondItem="kWc-jO-xXw" secondAttribute="leading" id="E10-Mx-5SF"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="Whd-Ek-W75" secondAttribute="bottom" id="I4R-Fz-Do8"/>
+                            <constraint firstItem="Whd-Ek-W75" firstAttribute="top" secondItem="kWc-jO-xXw" secondAttribute="top" id="JNO-pd-dXh"/>
+                            <constraint firstItem="FGt-bZ-ht2" firstAttribute="leading" secondItem="kWc-jO-xXw" secondAttribute="leading" constant="16" id="LPX-D5-tPm"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="Whd-Ek-W75" secondAttribute="trailing" id="RS5-iy-XS1"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="wo5-E5-avh" secondAttribute="trailing" constant="8" id="bTZ-WI-833"/>
+                            <constraint firstItem="wo5-E5-avh" firstAttribute="top" secondItem="kWc-jO-xXw" secondAttribute="top" constant="8" id="vJG-88-pfU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kWc-jO-xXw"/>
+                    </view>
+                    <connections>
+                        <outlet property="quoteLabel" destination="wo5-E5-avh" id="Pzk-4P-48W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcs-5b-LE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="breakfast" width="375" height="500"/>
+    </resources>
+</document>
