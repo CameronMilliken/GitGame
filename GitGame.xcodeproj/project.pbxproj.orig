@@ -93,10 +93,23 @@
 		B40438A421E7CAAF0038D9CC /* GitGame */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+				B40438A521E7CAAF0038D9CC /* AppDelegate.swift */,
+				B40438A721E7CAAF0038D9CC /* GameScene.sks */,
+				B40438A921E7CAAF0038D9CC /* Actions.sks */,
+				B40438AB21E7CAAF0038D9CC /* GameScene.swift */,
+				B40438AD21E7CAAF0038D9CC /* GameViewController.swift */,
+				B40438AF21E7CAAF0038D9CC /* Main.storyboard */,
+				B40438C121E7E2E30038D9CC /* model */,
+				B40438B221E7CAB10038D9CC /* Assets.xcassets */,
+				B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */,
+				B40438B721E7CAB10038D9CC /* Info.plist */,
+=======
 
 				26D03A7121E7E9FC002A832A /* Resources */,
 				26D03A7021E7E9B9002A832A /* ViewControllers */,
 
+>>>>>>> a48d03b8aa425cdcb2d41d8ddb0f43c6f7751fbd
 			);
 			path = GitGame;
 			sourceTree = "<group>";
