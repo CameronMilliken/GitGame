@@ -17,6 +17,8 @@
 		B40438B121E7CAAF0038D9CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40438AF21E7CAAF0038D9CC /* Main.storyboard */; };
 		B40438B321E7CAB10038D9CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40438B221E7CAB10038D9CC /* Assets.xcassets */; };
 		B40438B621E7CAB10038D9CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */; };
+		B40438CB21E7FD880038D9CC /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438CA21E7FD880038D9CC /* QuoteController.swift */; };
+		B40438CD21E7FDAA0038D9CC /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438CC21E7FDAA0038D9CC /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B40438B221E7CAB10038D9CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B40438B521E7CAB10038D9CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B40438B721E7CAB10038D9CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B40438CA21E7FD880038D9CC /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		B40438CC21E7FDAA0038D9CC /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +74,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		26D03A7621E80152002A832A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B40438CA21E7FD880038D9CC /* QuoteController.swift */,
+				B40438CC21E7FDAA0038D9CC /* Quote.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		B404389921E7CAAF0038D9CC = {
 			isa = PBXGroup;
 			children = (
 				B40438A421E7CAAF0038D9CC /* GitGame */,
 				B40438A321E7CAAF0038D9CC /* Products */,
+				B40438C721E7F9150038D9CC /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,10 +104,18 @@
 		B40438A421E7CAAF0038D9CC /* GitGame */ = {
 			isa = PBXGroup;
 			children = (
+				26D03A7621E80152002A832A /* Model */,
 				26D03A7121E7E9FC002A832A /* Resources */,
 				26D03A7021E7E9B9002A832A /* ViewControllers */,
 			);
 			path = GitGame;
+			sourceTree = "<group>";
+		};
+		B40438C721E7F9150038D9CC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +193,9 @@
 			files = (
 				B40438AC21E7CAAF0038D9CC /* GameScene.swift in Sources */,
 				B40438AE21E7CAAF0038D9CC /* GameViewController.swift in Sources */,
+				B40438CD21E7FDAA0038D9CC /* Quote.swift in Sources */,
 				26D03A6F21E7E8E6002A832A /* QuotesViewController.swift in Sources */,
+				B40438CB21E7FD880038D9CC /* QuoteController.swift in Sources */,
 				B40438A621E7CAAF0038D9CC /* AppDelegate.swift in Sources */,
 				26D03A6D21E7E8D5002A832A /* StartButtonViewController.swift in Sources */,
 			);
