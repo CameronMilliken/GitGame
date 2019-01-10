@@ -11,6 +11,8 @@ import UIKit
 class QuotesViewController: UIViewController {
     // MARK: - Properties
     var gameScore: Int = 0
+    var quote: Quote?
+    var randomQuote = QuoteController.sharedInstance.quotes.randomElement()!
     
     // MARK: - IBOutlets
     @IBOutlet weak var quoteLabel: UILabel!
@@ -18,15 +20,30 @@ class QuotesViewController: UIViewController {
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateViews()
     }
     
     // MARK: - Actions
     @IBAction func ronSwansonButtonTapped(_ sender: Any) {
+        if randomQuote.isRonSwanson == true {
+            presentCorrectAlertController()
+        } else {
+            presentWrongAlertController()
+        }
     }
     
     @IBAction func orNotButtonTapped(_ sender: Any) {
+        if randomQuote.isRonSwanson == true {
+            presentWrongAlertController()
+        } else {
+            presentCorrectAlertController()
+        }
     }
     
+    func updateViews() {
+        
+        quoteLabel?.text = randomQuote.quote
+    }
 }
 
 // MARK: - AlertController
@@ -34,8 +51,11 @@ extension QuotesViewController {
     func presentCorrectAlertController() {
         let correctAlertController = UIAlertController(title: "Yes", message: nil, preferredStyle: .alert)
         let okayButton = UIAlertAction(title: "Next Quote", style: .default) { (_) in
-            //get new quote
-            
+            self.randomQuote = QuoteController.sharedInstance.quotes.randomElement()!
+            DispatchQueue.main.async {
+                self.quoteLabel?.text = self.randomQuote.quote
+                
+            }
         }
         correctAlertController.addAction(okayButton)
         present(correctAlertController, animated: true)
@@ -44,7 +64,10 @@ extension QuotesViewController {
     func presentWrongAlertController() {
         let wrongAlertController = UIAlertController(title: "There's no shame in failure", message: "If you gave it an honest effort.", preferredStyle: .alert)
         let okayButton = UIAlertAction(title: "Next Quote", style: .default) { (_) in
-            //get new quote
+            self.randomQuote = QuoteController.sharedInstance.quotes.randomElement()!
+            DispatchQueue.main.async {
+                self.quoteLabel?.text = self.randomQuote.quote
+            }
         }
         wrongAlertController.addAction(okayButton)
         present(wrongAlertController, animated: true)

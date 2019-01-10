@@ -10,9 +10,9 @@ import Foundation
 
 class Quote {
     let quote: String
-    init(quote:String) {
+    let isRonSwanson: Bool
+    init(quote:String, isRonSwanson: Bool) {
         self.quote = quote
+        self.isRonSwanson = isRonSwanson
     }
-    
-
 }
