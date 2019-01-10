@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D03A6D21E7E8D5002A832A /* StartButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03A6C21E7E8D5002A832A /* StartButtonViewController.swift */; };
+		26D03A6F21E7E8E6002A832A /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D03A6E21E7E8E6002A832A /* QuotesViewController.swift */; };
 		B40438A621E7CAAF0038D9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40438A521E7CAAF0038D9CC /* AppDelegate.swift */; };
 		B40438A821E7CAAF0038D9CC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B40438A721E7CAAF0038D9CC /* GameScene.sks */; };
 		B40438AA21E7CAAF0038D9CC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B40438A921E7CAAF0038D9CC /* Actions.sks */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26D03A6C21E7E8D5002A832A /* StartButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonViewController.swift; sourceTree = "<group>"; };
+		26D03A6E21E7E8E6002A832A /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		B40438A221E7CAAF0038D9CC /* GitGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40438A521E7CAAF0038D9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B40438A721E7CAAF0038D9CC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -41,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26D03A7021E7E9B9002A832A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26D03A6C21E7E8D5002A832A /* StartButtonViewController.swift */,
+				26D03A6E21E7E8E6002A832A /* QuotesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		26D03A7121E7E9FC002A832A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B40438A521E7CAAF0038D9CC /* AppDelegate.swift */,
+				B40438A721E7CAAF0038D9CC /* GameScene.sks */,
+				B40438A921E7CAAF0038D9CC /* Actions.sks */,
+				B40438AB21E7CAAF0038D9CC /* GameScene.swift */,
+				B40438AD21E7CAAF0038D9CC /* GameViewController.swift */,
+				B40438AF21E7CAAF0038D9CC /* Main.storyboard */,
+				B40438B221E7CAB10038D9CC /* Assets.xcassets */,
+				B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */,
+				B40438B721E7CAB10038D9CC /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B404389921E7CAAF0038D9CC = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +89,8 @@
 		B40438A421E7CAAF0038D9CC /* GitGame */ = {
 			isa = PBXGroup;
 			children = (
-				B40438A521E7CAAF0038D9CC /* AppDelegate.swift */,
-				B40438A721E7CAAF0038D9CC /* GameScene.sks */,
-				B40438A921E7CAAF0038D9CC /* Actions.sks */,
-				B40438AB21E7CAAF0038D9CC /* GameScene.swift */,
-				B40438AD21E7CAAF0038D9CC /* GameViewController.swift */,
-				B40438AF21E7CAAF0038D9CC /* Main.storyboard */,
-				B40438B221E7CAB10038D9CC /* Assets.xcassets */,
-				B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */,
-				B40438B721E7CAB10038D9CC /* Info.plist */,
+				26D03A7121E7E9FC002A832A /* Resources */,
+				26D03A7021E7E9B9002A832A /* ViewControllers */,
 			);
 			path = GitGame;
 			sourceTree = "<group>";
@@ -148,7 +170,9 @@
 			files = (
 				B40438AC21E7CAAF0038D9CC /* GameScene.swift in Sources */,
 				B40438AE21E7CAAF0038D9CC /* GameViewController.swift in Sources */,
+				26D03A6F21E7E8E6002A832A /* QuotesViewController.swift in Sources */,
 				B40438A621E7CAAF0038D9CC /* AppDelegate.swift in Sources */,
+				26D03A6D21E7E8D5002A832A /* StartButtonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8N698PRG;
+				DEVELOPMENT_TEAM = D7Q6ZCPJ6Q;
 				INFOPLIST_FILE = GitGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8N698PRG;
+				DEVELOPMENT_TEAM = D7Q6ZCPJ6Q;
 				INFOPLIST_FILE = GitGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
