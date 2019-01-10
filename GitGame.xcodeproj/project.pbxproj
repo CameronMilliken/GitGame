@@ -71,7 +71,6 @@
 				B40438AD21E7CAAF0038D9CC /* GameViewController.swift */,
 				B40438AF21E7CAAF0038D9CC /* Main.storyboard */,
 				B40438C121E7E2E30038D9CC /* model */,
-				B40438BF21E7E2BC0038D9CC /* QuoteController.swift */,
 				B40438B221E7CAB10038D9CC /* Assets.xcassets */,
 				B40438B421E7CAB10038D9CC /* LaunchScreen.storyboard */,
 				B40438B721E7CAB10038D9CC /* Info.plist */,
@@ -83,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B40438BD21E7E1510038D9CC /* Quote.swift */,
+				B40438BF21E7E2BC0038D9CC /* QuoteController.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
