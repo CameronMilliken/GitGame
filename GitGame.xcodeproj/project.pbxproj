@@ -80,8 +80,7 @@
 				B40438CA21E7FD880038D9CC /* QuoteController.swift */,
 				B40438CC21E7FDAA0038D9CC /* Quote.swift */,
 			);
-			name = Model;
-			path = "New Group";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B404389921E7CAAF0038D9CC = {
