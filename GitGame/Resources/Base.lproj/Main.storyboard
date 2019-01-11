@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-aP-hSH">
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-aP-hSH">
                                 <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -56,7 +56,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Ek-W75">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo5-E5-avh">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wo5-E5-avh">
                                 <rect key="frame" x="8" y="28" width="359" height="100"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -66,7 +66,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2df-jt-6Hu">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2df-jt-6Hu">
                                 <rect key="frame" x="209" y="557" width="150" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -80,7 +80,7 @@
                                     <action selector="orNotButtonTapped:" destination="VFC-Om-fTL" eventType="touchUpInside" id="ArW-QD-VbO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-bZ-ht2">
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-bZ-ht2">
                                 <rect key="frame" x="16" y="557" width="139" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.1683992869" blue="0.1015521025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -93,6 +93,13 @@
                                     <action selector="ronSwansonButtonTapped:" destination="VFC-Om-fTL" eventType="touchUpInside" id="Gjd-L4-4h3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Score)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wak-Q9-5Ey">
+                                <rect key="frame" x="159" y="520" width="57" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -102,22 +109,25 @@
                             <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="2df-jt-6Hu" secondAttribute="trailing" constant="16" id="BLx-Qr-DfC"/>
                             <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="2df-jt-6Hu" secondAttribute="bottom" constant="60" id="DtY-lN-kGV"/>
                             <constraint firstItem="Whd-Ek-W75" firstAttribute="leading" secondItem="kWc-jO-xXw" secondAttribute="leading" id="E10-Mx-5SF"/>
+                            <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="wak-Q9-5Ey" secondAttribute="bottom" constant="126" id="I05-1Q-xiE"/>
                             <constraint firstItem="kWc-jO-xXw" firstAttribute="bottom" secondItem="Whd-Ek-W75" secondAttribute="bottom" id="I4R-Fz-Do8"/>
                             <constraint firstItem="Whd-Ek-W75" firstAttribute="top" secondItem="kWc-jO-xXw" secondAttribute="top" id="JNO-pd-dXh"/>
                             <constraint firstItem="FGt-bZ-ht2" firstAttribute="leading" secondItem="kWc-jO-xXw" secondAttribute="leading" constant="16" id="LPX-D5-tPm"/>
                             <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="Whd-Ek-W75" secondAttribute="trailing" id="RS5-iy-XS1"/>
                             <constraint firstItem="kWc-jO-xXw" firstAttribute="trailing" secondItem="wo5-E5-avh" secondAttribute="trailing" constant="8" id="bTZ-WI-833"/>
                             <constraint firstItem="wo5-E5-avh" firstAttribute="top" secondItem="kWc-jO-xXw" secondAttribute="top" constant="8" id="vJG-88-pfU"/>
+                            <constraint firstItem="wak-Q9-5Ey" firstAttribute="centerX" secondItem="Jst-oO-v4K" secondAttribute="centerX" id="vkb-5t-nCu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kWc-jO-xXw"/>
                     </view>
                     <connections>
                         <outlet property="quoteLabel" destination="wo5-E5-avh" id="Pzk-4P-48W"/>
+                        <outlet property="scoreLabel" destination="wak-Q9-5Ey" id="dnR-l0-mz8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcs-5b-LE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="148"/>
+            <point key="canvasLocation" x="925.60000000000002" y="147.97601199400302"/>
         </scene>
     </scenes>
     <resources>

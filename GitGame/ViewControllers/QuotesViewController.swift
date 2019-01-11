@@ -16,6 +16,8 @@ class QuotesViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -27,6 +29,7 @@ class QuotesViewController: UIViewController {
     @IBAction func ronSwansonButtonTapped(_ sender: Any) {
         if randomQuote.isRonSwanson == true {
             presentCorrectAlertController()
+            gameScore += 1
         } else {
             presentWrongAlertController()
         }
@@ -37,11 +40,14 @@ class QuotesViewController: UIViewController {
             presentWrongAlertController()
         } else {
             presentCorrectAlertController()
+            gameScore += 1
         }
     }
     
+    
+    
     func updateViews() {
-        
+        scoreLabel?.text = String(gameScore)
         quoteLabel?.text = randomQuote.quote
     }
 }
@@ -67,6 +73,7 @@ extension QuotesViewController {
             self.randomQuote = QuoteController.sharedInstance.quotes.randomElement()!
             DispatchQueue.main.async {
                 self.quoteLabel?.text = self.randomQuote.quote
+                self.scoreLabel?.text = String(self.gameScore)
             }
         }
         wrongAlertController.addAction(okayButton)
