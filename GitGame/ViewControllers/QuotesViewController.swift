@@ -30,6 +30,9 @@ class QuotesViewController: UIViewController {
         if randomQuote.isRonSwanson == true {
             presentCorrectAlertController()
             gameScore += 1
+            DispatchQueue.main.async {
+                self.scoreLabel.text = String(self.gameScore)
+            }
         } else {
             presentWrongAlertController()
         }
@@ -41,6 +44,9 @@ class QuotesViewController: UIViewController {
         } else {
             presentCorrectAlertController()
             gameScore += 1
+            DispatchQueue.main.async {
+                self.scoreLabel.text = String(self.gameScore)
+            }
         }
     }
     
